@@ -14,7 +14,7 @@ interface SessionAttributes {
 interface SessionCreationAttributes extends Optional<SessionAttributes, 'id'> {}
 
 // Define the Session model class
-class Session extends Model<SessionAttributes, SessionCreationAttributes> implements SessionAttributes {
+export class Session extends Model<SessionAttributes, SessionCreationAttributes> implements SessionAttributes {
     public id!: number;
     public userId!: number;
     public token!: string;
