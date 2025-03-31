@@ -1,6 +1,6 @@
 {
-  "name": "models",
-  "version": "1.0.0",
+  "name": "@repo/models",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -8,11 +8,8 @@
   },
   "exports": {
     ".": "./dist/index.js",
-    "./*": "./dist/*",
-    "./metadata": {
-      "types": "./metadata/session.ts",
-      "default": "./dist/metadata/session.js"
-    }
+    "./metadata/*": "./metadata/*"
+    
   },
   "author": "",
   "license": "ISC",

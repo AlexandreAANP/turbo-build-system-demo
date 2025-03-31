@@ -1,6 +1,22 @@
 {
+    
+    "name": "turbo-example",
+    "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check-types": "turbo run check-types"
+    },
+    "packageManager": "npm@10.9.2",
+    "engines": {
+        "node": ">=18"
+    },
     "workspaces": [
-      "functions/*",
-      "packages/*"
-    ]
+        "functions/*",
+        "packages/*"
+    ],
+    "devDependencies": {
+        "turbo": "^2.4.4"
+    }
 }
