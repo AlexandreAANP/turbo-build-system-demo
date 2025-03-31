@@ -6,6 +6,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
   },
+  "exports": {
+    ".": "./dist/index.js",
+    "./*": "./dist/*",
+    "./metadata": {
+      "types": "./metadata/session.ts",
+      "default": "./dist/metadata/session.js"
+    }
+  },
   "author": "",
   "license": "ISC",
   "description": "",
